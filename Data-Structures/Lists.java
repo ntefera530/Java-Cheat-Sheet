@@ -1,4 +1,4 @@
-public class arrays{
+public class lists{
 
     public static void main(String[] args){
 
@@ -9,12 +9,28 @@ public class arrays{
         List<Integer> list = new ArrayList<>();
         List<Integer> list2 = new ArrayList<Integer>(5);
  
-
         //*-------------------------*
-        //*     Access Elements     *
+        //*     Useful Functions    *
         //*-------------------------*
 
-        list.get(3);
+            list.get(3);
+            list.add(4);             
+            list.remove(2);
+
+            int size = list.size();
+            list.clear();
+            boolean isEmpty = list.isEmpty();
+
+            int value = list.get(2);
+            list.set(2,"hello");
+            int index = list.indexOf(3); // -1 if not found
+            int index = list.lastIndexOf(3); // -1 if not found
+
+            boolean isFound = list.contains(5);
+
+            //advanced
+            boolean isFound list.containsAss(Collection collection);
+            list.sort(Comparator comp);
 
         //*-------------------------*
         //*        Iteration        *
@@ -30,25 +46,7 @@ public class arrays{
             System.out.println(list2.get(3));
         }
 
-        //*-------------------------*
-        //*     Useful Functions    *
-        //*-------------------------*
 
-            list.add(4);
-            int size = list.size();
-            list.clear();
-            list.remove(2);
-            int value = list.get(2);
-            list.set(2,"hello");
-            int index = list.indexOf(3); // -1 if not found
-            int index = list.lastIndexOf(3); // -1 if not found
-            boolean isEmpty = list.isEmpty();
-            boolean isFound = list.contains(5);
-
-            //advanced
-            boolean isFound list.containsAss(Collection collection);
-            list.sort(Comparator comp);
-            
         return;
     }
 }
